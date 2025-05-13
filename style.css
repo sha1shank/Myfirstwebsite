@@ -1,0 +1,73 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  padding: 10px 0;
+  z-index: 1000;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background 0.3s;
+}
+.navbar a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Section Base Styles */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Background sections */
+.bg-home {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+.bg-intro {
+  background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+/* Content sections */
+.content {
+  background: #f4f4f4;
+  color: #333;
+}
+.content h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+.content p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
